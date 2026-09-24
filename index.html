@@ -153,6 +153,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             pointer-events: none;
             z-index: 0;
         }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin: 15px 0;
+        }
+        .social-icons a {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(26, 52, 84, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #f8fafc;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+        .social-icons a:hover {
+            background: rgba(245, 197, 24, 0.2);
+            border-color: rgba(245, 197, 24, 0.5);
+            color: #f5c518;
+            transform: translateY(-3px);
+        }
     </style>
 </head>
 <body class="selection:bg-premium-500 selection:text-ocean-950 min-h-screen flex flex-col relative w-full overflow-x-hidden">
@@ -322,7 +348,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="img-frame aspect-[4/5]">
                                 <img id="img_obi_founder" src="https://placehold.co/400x500/10233b/f5c518?text=Obedi+John+Mark" alt="Obedi John Mark">
                                 <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-ocean-950 p-2.5 text-center">
-                                    <span class="text-[11px] font-bold text-white block">Obedi John Mark</span>
+                                    <span class="text-[11px] font-bold text-white block">Obeid John Mark</span>
                                     <span class="text-[9px] text-premium-400 block">Founder & Lead</span>
                                 </div>
                             </div>
@@ -716,8 +742,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="max-w-6xl mx-auto space-y-3">
             <h2 class="text-base font-bold text-white tracking-tight">The Voice TZ</h2>
             <p class="text-slate-400 text-xs max-w-md mx-auto leading-relaxed">
-                Tanzania's  contemporary gospel A Cappella vocal ensemble. <br>&copy; 1994 – 2026. All Rights Reserved.
+                Tanzania's contemporary gospel A Cappella vocal ensemble. <br>&copy; 1994 – 2026. All Rights Reserved.
             </p>
+            
+            <!-- Social Media Icons -->
+            <div class="social-icons">
+                <a href="https://www.youtube.com/@thevoicetz" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/thevoicetz/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@thevoicetz_acapella" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.facebook.com/thevoicetz/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+
+            <!-- Official Website Link -->
+            <div class="pt-1">
+                <a href="https://github.com/tmg2004star/TheVoiceTz/" target="_blank" rel="noopener" class="text-xs text-premium-400 hover:text-premium-300 font-semibold inline-flex items-center space-x-1 transition">
+                    <i class="fa-solid fa-globe"></i>
+                    <span>The Voice Tz Official Website </span>
+                </a>
+            </div>
+
             <p class="text-slate-400 text-[11px] max-w-xl mx-auto leading-relaxed italic pt-2 border-t border-white/10 mt-3">
                 <strong>Disclaimer:</strong> The Voice TZ is strictly an acapella music group and does not own or operate any bar, lounge, or entertainment venue in Tanzania.
             </p>
@@ -936,5 +979,4 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         }
     </script>
 </body>
-
 </html>
